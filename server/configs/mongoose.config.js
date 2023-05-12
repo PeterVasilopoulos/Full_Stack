@@ -5,7 +5,8 @@ const dbName = process.env.ATLAS_DATABASE;
 const username = process.env.ATLAS_USERNAME;
 const pw = process.env.ATLAS_PASSWORD;
 
-const uri = `mongodb+srv://${username}:${pw}@pogchamp.ist0h13.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://${username}:${pw}@pogchamp.ist0h13.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+const uri = `mongodb://127.0.0.1/${dbName}`;
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
