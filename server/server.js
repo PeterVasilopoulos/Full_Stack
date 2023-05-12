@@ -15,7 +15,7 @@ require("./configs/mongoose.config");
 // These two options do the same thing
 // Option 1
 const Routes = require("./routes/song.routes");
-// Routes(app);
+Routes(app);
 
 // Option 2
 // require("./routes/song.routes")(app);

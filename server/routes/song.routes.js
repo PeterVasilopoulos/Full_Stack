@@ -5,7 +5,7 @@ module.exports = (app) => {
     app.post("/api/songs/new", SongController.createSong);
     
     // Read all - R
-    app.get("/api/song", SongController.allSongs);
+    app.get("/api/songs", SongController.allSongs);
 
     // Read one song - R
     app.get("/api/songs/:id", SongController.oneSong);
