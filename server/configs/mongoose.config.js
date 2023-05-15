@@ -1,7 +1,7 @@
 // Establish a connection to db server
 const mongoose = require("mongoose");
 
-const dbName = process.env.ATLAS_DATABASE;
+const dbName = "songDBCloud23";
 const username = process.env.ATLAS_USERNAME;
 const pw = process.env.ATLAS_PASSWORD;
 

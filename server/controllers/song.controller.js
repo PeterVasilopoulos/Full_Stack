@@ -5,7 +5,7 @@ module.exports.createSong = (req, res) => {
     const newSong = req.body;
     Song.create(newSong)
     .then(song => res.json({results: song}))
-    .catch(err => res.json(err));
+    .catch(err => res.status(400).json(err));
 }
 
 // Read all
