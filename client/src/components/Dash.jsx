@@ -30,7 +30,7 @@ const Dash = () => {
     const handleDelete = (e, id) => {
         // Log to make sure it works correctly
         console.log("This is our delete function", id)
-        axios.delete(`https://localhost:8000/api/songs/delete/${id}`)
+        axios.delete(`http://localhost:8000/api/songs/delete/${id}`)
         .then((res) => {
             // Log to check that we've deleted something
             console.log("Success, song deleted")

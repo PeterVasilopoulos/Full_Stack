@@ -33,12 +33,13 @@ const Create = () => {
             // Navigate back to home
             navigate("/")
         })
-        .catch((err) => {
+        .catch(err=>{
             const errorResponse = err.response.data.errors;
-            const errorArr = [];
-            for(const key of Object.keys(errorResponse)) {
-                errorArr.push(errorResponse[key].message);
+            const errorArr = []; 
+            for (const key of Object.keys(errorResponse)) {
+                errorArr.push(errorResponse[key].message)
             }
+            // Set Errors
             setErrors(errorArr);
         })
     }
@@ -51,7 +52,9 @@ const Create = () => {
             {/* Errors */}
             {
                 errors.map((err, i) => {
-                    <p key={i}>{err}</p>
+                    return (
+                        <p key={i}>{err}</p>
+                    )
                 })
             }
 
